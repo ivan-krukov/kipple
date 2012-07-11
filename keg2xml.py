@@ -20,6 +20,15 @@ def print_with_header(string, header):
 	print string
 	print "</{}>".format(header)
 
+#It is expected that openning and closing sequences (a and b) are different
+def between (s, a, b):
+	return s[s.find(a)+len(a) : s.find(b)]
+
+#Strip the outermost pair of tags
+def strip_tags(string):
+	tag = between(string,"<",">")
+	return between(string,"<{}>".format(tag),"</{}>".format(tag))
+
 if __name__=="__main__":
 	parser = ArgumentParser("Parses a .keg BRITE hierarchy file (htext)")
 	parser.add_argument("keg_file",type=str,help="Input .keg file")
