@@ -26,58 +26,50 @@ if __name__=="__main__":
 	parser.add_argument("keg_file",type=str,help="Input .keg file")
 	args = parser.parse_args()
 
-	ec_line_pattern = re.compile(r"^D.*$")
-	enzyme_line_pattern = re.compile(r"^E.*$")
-	#Example: 1.1.1.1  alcohol dehydrogenase
-	ec_entry_pattern = re.compile(r"^D\s+(?P<EC>\d+\.\d+\.\d+\.\d+)\s+(?P<description>.*)$")
-	#Example: K12G11.3 sodh-1; SOrbitol DeHydrogenase family member (sodh-1)	K13953 alcohol dehydrogenase, propanol-preferring [EC:1.1.1.1]
-
-	#gene entry fields
-	"""sequence_name_pattern = re.compile(r"^E\s+([.A-Z0-9]+)")
-	common_name_pattern = re.compile(r"\s([-a-z0-9]+);\s")
-	description_pattern = re.compile(r"\s(.+)$")"""
-	protein_entry_pattern = re.compile(r"^E\s+(?P<sequence_id>[.A-Z0-9]+)(\s(?P<common_name>[-a-z0-9]+);\s)\s(?P<description>.+?)$") 
-	
-	#kegg entry fields
-	id_pattern = r"(?P<kegg_id>K\d{5})\s"
-	kegg_description_pattern = r"(?P<kegg_descrition>.*\s)"
-	ec_list_pattern = r"\[EC:(?P<EC>\d+\.\d+\.\d+\.\d+?\s)+\]"
+	ec_pattern = re.compile(r"([-0-9]+\.){3}[-0-9]")
 
 	hierarchy = defaultdict(Entry)
 	line_buffer = []
 	ec_line = ""
 
 	for line in open(args.keg_file):
-		if ec_line_pattern.match(line) and not line_buffer:	
+		
+		if line.startswith("D") and not line_buffer:	
 			ec_line = line
-		elif enzyme_line_pattern.match(line) and ec_line:
+
+		elif line.startswith("E") and ec_line:
 			line_buffer.append(line)
-		elif ec_line_pattern.match(line) and line_buffer:
-			#Record new complete entry
-			ec_match = ec_entry_pattern.match(ec_line)
-			ec_number = ec_match.group("EC")
-			ec_description = ec_match.group("description")
-			print "EC:",ec_number,";",ec_description
-			
+
+		elif line.startswith("D") and line_buffer:
+			ec_line_tokens = ec_line.split()
+			ec_number = ec_line_tokens[1]
+			ec_description = " ".join(ec_line_tokens[2:])
+				
+			print ec_number,ec_description
 			for description_line in line_buffer:
 				protein_entry,kegg_entry = description_line.split("\t")
-				
-				"""sequence_name = sequence_name_pattern.search(protein_entry).group(1)
 
-				common_name_match = common_name_pattern.search(protein_entry)
-				if common_name_match: 
-					common_name = common_name_match.group(1)
+				protein_entry_tokens = protein_entry.split()
+				protein_sequence_name = protein_entry_tokens[1]
+				if (";" in protein_entry_tokens[2]):
+					protein_common_name = protein_entry_tokens[2][:-1]
+					protein_description = " ".join(protein_entry_tokens[3:])
 				else:
-					common_name = ""
+					protein_common_name = ""
+					protein_description = " ".join(protein_entry_tokens[2:])
+				
+				kegg_entry,kegg_mapped_ecs = kegg_entry.split("[")
+				kegg_entry_tokens = kegg_entry.split()
+				kegg_id = kegg_entry_tokens[0]
+				kegg_description = kegg_entry_tokens[1:]
 
-				description = description_pattern.search(protein_entry).group(1)"""
+				kegg_ecs = ec_pattern.findall(kegg_mapped_ecs)
+				print """\tID: {seq_name}; Common: {name}\n\t{description}\n\tKEGG: {K_id}""".format(
+					seq_name = protein_sequence_name, 
+					name = protein_common_name, 
+					description = protein_description, 
+					K_id = kegg_id)
 
-				protein_match = protein_entry_pattern.match(protein_entry)
-				sequence_name = protein_match.group("sequence_id")
-				common_name = protein_match.group("common_name")
-				description = protein_match.group("description")
-
-				print sequence_name, "#", common_name, "#", description
-
+			ec_line = line
 			line_buffer = []
 			
