@@ -33,9 +33,10 @@ if __name__=="__main__":
 	#Example: K12G11.3 sodh-1; SOrbitol DeHydrogenase family member (sodh-1)	K13953 alcohol dehydrogenase, propanol-preferring [EC:1.1.1.1]
 
 	#gene entry fields
-	sequence_name_pattern = re.compile(r"^E\s+([.A-Z0-9]+)")
+	"""sequence_name_pattern = re.compile(r"^E\s+([.A-Z0-9]+)")
 	common_name_pattern = re.compile(r"\s([-a-z0-9]+);\s")
-	description_pattern = re.compile(r"\s(.+)$")
+	description_pattern = re.compile(r"\s(.+)$")"""
+	protein_entry_pattern = re.compile(r"^E\s+(?P<sequence_id>[.A-Z0-9]+)(\s(?P<common_name>[-a-z0-9]+);\s)\s(?P<description>.+?)$") 
 	
 	#kegg entry fields
 	id_pattern = r"(?P<kegg_id>K\d{5})\s"
@@ -61,7 +62,7 @@ if __name__=="__main__":
 			for description_line in line_buffer:
 				protein_entry,kegg_entry = description_line.split("\t")
 				
-				sequence_name = sequence_name_pattern.search(protein_entry).group(1)
+				"""sequence_name = sequence_name_pattern.search(protein_entry).group(1)
 
 				common_name_match = common_name_pattern.search(protein_entry)
 				if common_name_match: 
@@ -69,9 +70,14 @@ if __name__=="__main__":
 				else:
 					common_name = ""
 
-				description = description_pattern.search(protein_entry).group(1)
+				description = description_pattern.search(protein_entry).group(1)"""
 
-				print sequence_name, common_name, description
+				protein_match = protein_entry_pattern.match(protein_entry)
+				sequence_name = protein_match.group("sequence_id")
+				common_name = protein_match.group("common_name")
+				description = protein_match.group("description")
+
+				print sequence_name, "#", common_name, "#", description
 
 			line_buffer = []
 			
