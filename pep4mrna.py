@@ -27,6 +27,7 @@ standard = {'ttt': 'F', 'tct': 'S', 'tat': 'Y', 'tgt': 'C',
 			'gtg': 'V', 'gcg': 'A', 'gag': 'E', 'ggg': 'G'}
 
 orf_pattern = re.compile(r"M.*?X")
+ambiguity_pattern = re.compile(r"N+")
 
 """Given a DNA sequence, translate in the forward frames, return list of 3 peptide sequences"""
 def forward_frame_translate (sequence):
@@ -45,24 +46,32 @@ def forward_frame_translate (sequence):
 
 	return translations
 
-
+def trim_ambiguous_nucleotides (sequence):
+	return ambiguity_pattern.sub(sequence,"")
 
 def longest_ORF (sequence):
 	open_reading_frames = orf_pattern.findall(sequence);
-	#trim M and X
-	return max(open_reading_frames,key=len)[1:-1]
+	
+	if open_reading_frames:
+		#trim M and X
+		return max(open_reading_frames,key=len)[1:-1]
+	else:
+		return ""
 
 if __name__=="__main__":
 	parser = argparse.ArgumentParser(__doc__)
 	parser.add_argument("input_file",type=str,help="Target fasta file")
 	args = parser.parse_args()
 
-	sequences = (seq.data.lower() for seq in split_fasta(args.input_file))
+	sequences = (seq for seq in split_fasta(args.input_file))
 
 	for seq in sequences:
+		data = trim_ambiguous_nucleotides(seq.data.lower())
+		header = seq.header
 		#keep track of longest ORF for each of 3 forward frames
 		peptides = []
-		for translation in forward_frame_translate(seq):
+		for translation in forward_frame_translate(data):
 			peptides.append(longest_ORF(translation))
+		print header
 		print max(peptides,key=len)
 	
