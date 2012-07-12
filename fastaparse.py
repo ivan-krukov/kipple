@@ -18,7 +18,7 @@ class Sequence:
 		return "\n".join([self.header,self.data])
 
 
-def split_fasta(input_file, count=0):
+def split_fasta(input_file):
 	
 	#resultant array of peptide sequences
 	sequences=list()
@@ -34,8 +34,6 @@ def split_fasta(input_file, count=0):
 			
 			#flush lines from the buffer to the sequences array
 			sequences.append(Sequence(header,"".join(seq_buffer)))
-			if (count and len(sequences) == count):
-				break
 			
 			seq_buffer=list()
 			header = line.strip()
@@ -49,7 +47,6 @@ def split_fasta(input_file, count=0):
 			seq_buffer.append(line.strip())
 
 	#dont forget the last sequence
-	if (sequences and len(sequences) < count):
-		sequences.append(Sequence(header,"".join(seq_buffer)))
+	sequences.append(Sequence(header,"".join(seq_buffer)))
   	return sequences
 
