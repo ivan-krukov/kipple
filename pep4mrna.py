@@ -8,8 +8,8 @@ from fastaparse import split_fasta
 
 standard = {'ttt': 'F', 'tct': 'S', 'tat': 'Y', 'tgt': 'C',
 			'ttc': 'F', 'tcc': 'S', 'tac': 'Y', 'tgc': 'C',
-			'tta': 'L', 'tca': 'S', 'taa': 'X', 'tga': 'X',
-			'ttg': 'L', 'tcg': 'S', 'tag': 'X', 'tgg': 'W',
+			'tta': 'L', 'tca': 'S', 'taa': '*', 'tga': '*',
+			'ttg': 'L', 'tcg': 'S', 'tag': '*', 'tgg': 'W',
 
 			'ctt': 'L', 'cct': 'P', 'cat': 'H', 'cgt': 'R',
 			'ctc': 'L', 'ccc': 'P', 'cac': 'H', 'cgc': 'R',
@@ -26,8 +26,7 @@ standard = {'ttt': 'F', 'tct': 'S', 'tat': 'Y', 'tgt': 'C',
 			'gta': 'V', 'gca': 'A', 'gaa': 'E', 'gga': 'G',
 			'gtg': 'V', 'gcg': 'A', 'gag': 'E', 'ggg': 'G'}
 
-orf_pattern = re.compile(r"M.*?X")
-ambiguity_pattern = re.compile(r"N+")
+orf_pattern = re.compile(r"M.*?\*")
 
 """Given a DNA sequence, translate in the forward frames, return list of 3 peptide sequences"""
 def forward_frame_translate (sequence):
@@ -47,7 +46,7 @@ def forward_frame_translate (sequence):
 	return translations
 
 def trim_ambiguous_nucleotides (sequence):
-	return re.sub(ambiguity_pattern,"",sequence)
+	return re.sub(r"n+|r+|s+","",sequence)
 
 def longest_ORF (sequence):
 	open_reading_frames = orf_pattern.findall(sequence);
