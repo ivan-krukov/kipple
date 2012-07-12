@@ -47,7 +47,7 @@ def forward_frame_translate (sequence):
 	return translations
 
 def trim_ambiguous_nucleotides (sequence):
-	return ambiguity_pattern.sub(sequence,"")
+	return re.sub(ambiguity_pattern,"",sequence)
 
 def longest_ORF (sequence):
 	open_reading_frames = orf_pattern.findall(sequence);
