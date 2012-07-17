@@ -27,6 +27,7 @@ standard = {'ttt': 'F', 'tct': 'S', 'tat': 'Y', 'tgt': 'C',
 			'gtg': 'V', 'gcg': 'A', 'gag': 'E', 'ggg': 'G'}
 
 orf_pattern = re.compile(r"M.*?\*")
+ambiguous_pattern = re.compile(r"n+|r+|s+")
 
 """Given a DNA sequence, translate in the forward frames, return list of 3 peptide sequences"""
 def forward_frame_translate (sequence):
@@ -46,7 +47,7 @@ def forward_frame_translate (sequence):
 	return translations
 
 def trim_ambiguous_nucleotides (sequence):
-	return re.sub(r"n+|r+|s+","",sequence)
+	return ambiguous_pattern.sub("",sequence)
 
 def longest_ORF (sequence):
 	open_reading_frames = orf_pattern.findall(sequence);
