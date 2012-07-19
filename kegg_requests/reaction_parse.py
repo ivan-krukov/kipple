@@ -3,7 +3,19 @@ Parse a reaction definition from a KEGG entry
 """
 from bs4 import BeautifulSoup
 
+#Curency metabolite list as defined by Huss and Holme, 2007
+__currency_metabolites = set(["C00001",	#water
+							"C00002",	#ATP
+							"C00003",	#NAD+
+							"C00004",	#NADH
+							"C00005",	#NADPH
+							"C00006",	#NADP+
+							"C00007",	#O2
+							"C00008",	#ADP
+							"C00011",	#CO2
+							"C00080"])	#H+
 class KReaction:
+
 	def __init__(self,entry_html):
 		self.__html = entry_html
 		self.pathways = list()
@@ -37,6 +49,11 @@ class KReaction:
 						orthology_entry = self.__split_unicode(subcell.text)
 						self.orthology.append(orthology_entry)
 
+		#parse substrates and products
+		sub, prod = self.equation.strip().split(" <=> ")
+		self.substrates = set(sub.split(" + "))
+		self.products = set(prod.split(" + "))
+
 	def __split_unicode(self,string):
 		return [token for token in string.strip().split(u"\xa0") if not token == ""]
 
@@ -65,7 +82,11 @@ class KReaction:
 		"Pathways:\n"+self.__table_repr(self.pathways)+\
 		"Orthology:\n"+self.__table_repr(self.orthology)).encode("utf-8")
 
+def exclude_currency (metabolites):
+	return metabolites.difference(__currency_metabolites)
 
-r = KReaction(open("example.html").read())
-print r
+if __name__=="__main__":
+	r = KReaction(open("example.html").read())
+	print exclude_currency(r.substrates)
+	print exclude_currency(r.products)
 
