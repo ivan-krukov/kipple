@@ -26,8 +26,8 @@ if __name__=="__main__":
 	lines = args.input_file.readlines()
 	args.input_file.close()
 	meter = ProgressMeter(len(lines),update_time=1)
-	
-
+	meter.update(0)
+		
 	for line in lines:
 		ec_number = line.strip()
 		ec_page = requests.get(reaction_query.format(ec_number))
@@ -39,7 +39,6 @@ if __name__=="__main__":
 			reaction_tables = page_tree.div.find_all("table", recursive = False)
 			for table in reaction_tables:
 				r = KReaction(table)
-				args.output_file.write(ec_number+"\t")
-				args.output_file.write(list_repr(exclude_currency(r.substrates))+"\t")
-				args.output_file.write(list_repr(exclude_currency(r.products))+"\n")
+				args.output_file.write(repr(r))
 		meter.step()
+	args.output_file.close()

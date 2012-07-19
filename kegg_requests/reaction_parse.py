@@ -46,11 +46,16 @@ class KReaction:
 					for subcell in cell.find_all("tr"):
 						orthology_entry = self.__split_unicode(subcell.text)
 						self.orthology.append(orthology_entry)
-
+			try:
+				self.name
+			except AttributeError:
+				self.name = ""
 		#parse substrates and products
 		sub, prod = self.equation.strip().split(" <=> ")
-		self.substrates = set(sub.split(" + "))
-		self.products = set(prod.split(" + "))
+		sub = [c for c in sub.split (" + ") if len(c) == 6]
+		prod = [c for c in prod.split (" + ") if len(c) == 6]
+		self.substrates = set(sub)
+		self.products = set(prod)
 
 	def __split_unicode(self,string):
 		return [token for token in string.strip().split(u"\xa0") if not token == ""]
