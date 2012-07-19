@@ -1,0 +1,2898 @@
+ecNumber  
+1.1.1.22  
+substrates  
+3-OH-benzopyrene + NAD+  
+commentarySubstrates  
+  
+literatureSubstrates  
+286303  
+organismSubstrates  
+Rattus norvegicus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+5-azido-UDP-glucose + NAD+  
+commentarySubstrates  
+  
+literatureSubstrates  
+667848  
+organismSubstrates  
+Homo sapiens  
+products  
+5-azido-UDP-glucuronate + NADH + H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+5-fluorouracil + NAD+  
+commentarySubstrates  
+  
+literatureSubstrates  
+286298  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+6-azauracil + NAD+  
+commentarySubstrates  
+  
+literatureSubstrates  
+286298  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+CDP-glucose + NAD+ + H2O  
+commentarySubstrates  
+17% of the reaction rate with UDP-glucose  
+literatureSubstrates  
+286294  
+organismSubstrates  
+Lilium longiflorum  
+products  
+CDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+CDP-glucose + NAD+ + H2O  
+commentarySubstrates  
+reaction rate is 5.5% of that with UDP-glucose  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+CDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+CTP-glucose + NAD+  
+commentarySubstrates  
+8% of activity with UDP-glucose  
+literatureSubstrates  
+654351  
+organismSubstrates  
+Saccharum spp.  
+products  
+CTP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+ir  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+dTDP-glucose + NAD+ + H2O  
+commentarySubstrates  
+reaction rate is 16.7% of that with UDPglucose  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+dTDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with ethylnicotinate adenine dinucleotide  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+nicotinamide hypoxanthine dinucleotide  
+literatureSubstrates  
+286296  
+organismSubstrates  
+Rattus norvegicus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+cosubstrates which can replace NAD+: 3-acetylpyridine adenine dinucleotide  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+cosubstrates which can replace NAD+: 3-acetylpyridine adenine dinucleotide  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+cosubstrates which can replace NAD+: 3-acetylpyridine adenine dinucleotide  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with alpha-NAD+  
+literatureSubstrates  
+286296  
+organismSubstrates  
+Rattus norvegicus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with alpha-NAD+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+3-pyridinealdehyde adenine dinucleotide  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with 3-formylpyridine adenine dinucleotide  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with NADP+  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with NADP+  
+literatureSubstrates  
+286294  
+organismSubstrates  
+Lilium longiflorum  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+thionicotinamide adenine dinucleotide  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+thionicotinamide adenine dinucleotide  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with GTP-glucose  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with: 3-pyridinealdehyde deamino adenosine dinucleotide  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with glucose  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+deamino adenine dinucleotide  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+deamino adenine dinucleotide  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with uridine diphosphoacetylgalactosamine  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with ethyl alcohol  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with deamino-NAD+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with alpha-D-glucose-1-phosphate  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with guanosine diphosphomannose  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with uridine diphosphoacetylglucosamine  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no activity with ADP-glucose  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no reaction with 3-propionylpyridine adenine dinucleotide  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no substrate: ADP-glucose  
+literatureSubstrates  
+654351  
+organismSubstrates  
+Saccharum spp.  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no substrate: UDP-galactose, UDP-N-galactosamin, ADP-glucose, GDP-glucose, GDP-mannose  
+literatureSubstrates  
+657082  
+organismSubstrates  
+Glycine max  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+no substrate: ADP-glucose, TDP-glucose  
+literatureSubstrates  
+688084  
+organismSubstrates  
+Arabidopsis thaliana  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+expression of Ugd(BCAL2946) is 5.4- and 135fold greater than that of Ugd(BCAM0855) and Ugd(BCAM2034), respectively. Combined activity of Ugd(BCAL2946) and Ugd(BCAM0855) is essential for the survival of Burkholderia cenocepacia but only the most highly expressed ugd gene, Ugd(BCAL2946), is required for polymyxin B resistance. UDP-galactose, UDP-acetylglucosamine and GDP-mannose are not substrates  
+literatureSubstrates  
+700059  
+organismSubstrates  
+Burkholderia cenocepacia J2315  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+expression of Ugd(BCAL2946) is 5.4- and 135fold greater than that of Ugd(BCAM0855) and Ugd(BCAM2034), respectively. Combined activity of Ugd(BCAL2946) and Ugd(BCAM0855) is essential for the survival of Burkholderia cenocepacia. UDP-galactose, UDP-acetylglucosamine and GDP-mannose are not substrates  
+literatureSubstrates  
+700059  
+organismSubstrates  
+Burkholderia cenocepacia J2315  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+importance of both UDPDH and mshA gene expression for successful light organ colonization in the sepiolid squid Euprymna tasmanica  
+literatureSubstrates  
+698005  
+organismSubstrates  
+Aliivibrio fischeri  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+More  
+commentarySubstrates  
+purified Ugd(BCAM2034) shows no in vitro Ugd activity. Expression of Ugd(BCAL2946) is 5.4- and 135fold greater than that of Ugd(BCAM0855) and Ugd(BCAM2034), respectively. UDP-galactose, UDP-acetylglucosamine and GDP-mannose are not substrates  
+literatureSubstrates  
+700059  
+organismSubstrates  
+Burkholderia cenocepacia J2315  
+products  
+?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+TDP-glucose + NAD+  
+commentarySubstrates  
+2% of activity with UDP-glucose  
+literatureSubstrates  
+654351  
+organismSubstrates  
+Saccharum spp.  
+products  
+TDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+ir  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+TDP-glucose + NAD+ + H2O  
+commentarySubstrates  
+reaction rate is 17% of that with UDPglucose  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+TDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+TDP-glucose + NAD+ + H2O  
+commentarySubstrates  
+38.5% of the rate with UDP-glucose  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+TDP-glucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-2-deoxyglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286291  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-2-deoxyglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-galactose + NAD+ + H2O  
+commentarySubstrates  
+11.9% of the rate with UDP-glucose  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+UDP-galacturonate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-galactose + NAD+ + H2O  
+commentarySubstrates  
+6.4% of the rate with UDP-glucose  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+UDP-galacturonate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Gallus gallus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286302  
+organismSubstrates  
+Phaseolus vulgaris  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286303  
+organismSubstrates  
+Cavia porcellus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286292  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286305  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286304  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+656220  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+685143  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+687474  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+697937  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286295  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286296  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286303  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286290  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286291  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286298  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286306  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Pisum sativum  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+667513  
+organismSubstrates  
+Zea mays  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+670630  
+organismSubstrates  
+Zea mays  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286307  
+organismSubstrates  
+Glycine max  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+688084  
+organismSubstrates  
+Arabidopsis thaliana  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286301  
+organismSubstrates  
+Streptococcus pyogenes  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+655477  
+organismSubstrates  
+Streptococcus pyogenes  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286294  
+organismSubstrates  
+Lilium longiflorum  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+654351  
+organismSubstrates  
+Saccharum spp.  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+ir  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+698529  
+organismSubstrates  
+Streptococcus equi subsp. zooepidemicus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+656240  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+657189  
+organismSubstrates  
+Caenorhabditis elegans  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+684611  
+organismSubstrates  
+Sphingomonas elodea  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+669522  
+organismSubstrates  
+Xenopus laevis  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+reversal of reaction cannot be demonstrated  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+NADP+, about 1% of activity of NAD+  
+literatureSubstrates  
+657082  
+organismSubstrates  
+Glycine max  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+several different UDPGDH isoenzymes contribute to UDP-glucuronate and hence wall matrix biosynthesis in maize  
+literatureSubstrates  
+670630  
+organismSubstrates  
+Zea mays  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+the enzyme has a crucial role during development of Xenopus laevis. Silencing of UGDH decreases glycosaminoglycan synthesis causing severe embryonic malformations because of defective gastrulation process  
+literatureSubstrates  
+669522  
+organismSubstrates  
+Xenopus laevis  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+UDPGDH-A activity has a more important role than UDPGDH-B in synthesis of UDP-glucuronate  
+literatureSubstrates  
+667513  
+organismSubstrates  
+Zea mays  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+C276 is an active catalytic residue and critically involved in the substrate binding  
+literatureSubstrates  
+667848  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+the enzyme has dual specificity with UDP-glucose and ethanol  
+literatureSubstrates  
+666609  
+organismSubstrates  
+Nicotiana tabacum  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+recombinant forms Ugd(BCAL2946) and Ugd(BCAM0855) have similar in vitro Ugd activity  
+literatureSubstrates  
+700059  
+organismSubstrates  
+Burkholderia cenocepacia J2315  
+products  
+UDP-glucuronate + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+711665  
+organismSubstrates  
+Homo sapiens  
+products  
+UDP-glucuronic acid + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+710750  
+organismSubstrates  
+Burkholderia cepacia  
+products  
+UDP-glucuronic acid + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+710762  
+organismSubstrates  
+Sphingomonas elodea  
+products  
+UDP-glucuronic acid + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 2 NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+710889  
+organismSubstrates  
+Proteus mirabilis  
+products  
+UDP-glucuronic acid + 2 NADH + 2 H+  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 3-acetylpyridine adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 3-acetylpyridine adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 3-acetylpyridine adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + 3-pyridinealdehyde adenine dinucleotide  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + deamino adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + deamino adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + nicotinamide hypoxanthine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286296  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + thionicotinamide adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-glucose + thionicotinamide adenine dinucleotide + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+UDP-glucuronate + ?  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-N-acetylglucosamine + NAD+ + H2O  
+commentarySubstrates  
+35% of the rate with UDP-glucose  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+? + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDP-N-acetylglucosamine + NAD+ + H2O  
+commentarySubstrates  
+6.3% of the rate with UDP-glucose  
+literatureSubstrates  
+687559  
+organismSubstrates  
+Pseudomonas aeruginosa  
+products  
+? + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Gallus gallus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286302  
+organismSubstrates  
+Phaseolus vulgaris  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286303  
+organismSubstrates  
+Cavia porcellus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286292  
+organismSubstrates  
+Escherichia coli  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286293  
+organismSubstrates  
+Escherichia coli  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286305  
+organismSubstrates  
+Escherichia coli  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286304  
+organismSubstrates  
+Homo sapiens  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286295  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286296  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286303  
+organismSubstrates  
+Rattus norvegicus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286290  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286291  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286298  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286300  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286306  
+organismSubstrates  
+Bos taurus  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286299  
+organismSubstrates  
+Pisum sativum  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286307  
+organismSubstrates  
+Glycine max  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+  
+literatureSubstrates  
+286297  
+organismSubstrates  
+Cryptococcus laurentii  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+first step of a branched pathway leading to plant cell-wall polysaccharides which contain glucuronic and galacturonic acids and the pentoses xylose, arabinose and apiose  
+literatureSubstrates  
+286294  
+organismSubstrates  
+Lilium longiflorum  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
+ecNumber  
+1.1.1.22  
+substrates  
+UDPglucose + NAD+ + H2O  
+commentarySubstrates  
+delivers glucuronic acid for the formation of a antiphagocytic polysaccharide capsule that is required for virulence of pathogenic bacteria  
+literatureSubstrates  
+286301  
+organismSubstrates  
+Streptococcus pyogenes  
+products  
+UDPglucuronate + NADH  
+commentaryProducts  
+  
+literatureProducts  
+  
+organismProducts  
+  
+reversibility  
+?  
+  
+
+
