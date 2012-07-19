@@ -1,0 +1,1306 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>KEGG REACTION: R07326</title>
+<link type="text/css" rel="stylesheet" href="/css/gn2.css">
+<link rel="stylesheet" href="/css/bget.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript">
+<!--
+function btn(bobj,img) {
+    bobj.src = "/Fig/bget/button_" + img + ".gif";
+}
+function init(){
+}
+function Link_XtrctSeq2(form) {
+    var dna_from;
+    var dna_to;
+    var dna_len;
+    var plus_up   = Number(form.XtrctSeq_UP.value) ;
+    var plus_down = Number(form.XtrctSeq_DOWN.value);
+    var vector    = Number(form.VECTOR.value);
+    var org       = form.ORG.value;
+    var chr       = form.CHR.value;
+    var kid       = form.KEGGID.value;
+    var url;
+
+    if (plus_up == 0 && plus_down == 0) {
+	url = "/dbget-bin/www_bget?-f+-n+n+" + kid;
+    }
+    else {
+	if (vector == 1) {
+	    dna_from  = Number(form.FROM.value)  - plus_up;
+	    dna_to    = Number(form.TO.value) + plus_down;
+	} else {
+	    dna_from  = Number(form.FROM.value)  - plus_down;
+	    dna_to    = Number(form.TO.value) + plus_up;
+	}
+
+	url = "http://www.genome.jp/dbget-bin/cut_sequence_genes.pl?FROM=" + dna_from + "&TO=" + dna_to +"&VECTOR=" + vector + "&ORG=" + org;
+	if (chr) url += "&CHR=" + chr;
+    }
+    //window.open( url, "_self" );
+    location.href = url;
+}
+function go_taxonomy(form){
+  form.submit();
+}
+//--->
+</script>
+
+</head>
+<body onload="window.focus();init();" bgcolor="#ffffff">
+<div>
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R07326"></a><font class="title2">REACTION: R07326</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form1">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R07326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">alcohol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Alcohol + NAD+ &lt;=> Aldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00069">C00069</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00071">C00071</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R07326.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R07326.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/dbget-bin/www_bget?ec:1.1.1.71">1.1.1.71</a><br>
+</div></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R07326">Ontology (1)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R07326">KEGG BRITE (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R07326">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R07326">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R07326">Chemical reaction (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R07326">KEGG ENZYME (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R07326">KEGG RPAIR (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R07326">SABIO-RK (1)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R07326">All databases (10)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R07326">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R00623"></a><font class="title2">REACTION: R00623</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form2">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R00623&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">primary_alcohol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Primary alcohol + NAD+ &lt;=> Aldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00226">C00226</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00071">C00071</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R00623.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R00623.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Comment</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">general reaction<br>
+NADP+ (ec <a href="/dbget-bin/www_bget?ec:1.1.1.71">1.1.1.71</a>, see <a href="/dbget-bin/www_bget?rn:R00625">R00625</a>)<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00139">RP00139</a>&nbsp;&nbsp;</nobr></td><td align="left">C00071_C00226 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/dbget-bin/www_bget?ec:1.1.1.71">1.1.1.71</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00071+R00623">rn00071</a>&nbsp;&nbsp;</nobr></td><td align="left">Fatty acid metabolism</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R00623">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R00623">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R00623">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R00623">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R00623">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R00623">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R00623">Chemical reaction (9)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R00623">KEGG ENZYME (4)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+reaction+rn:R00623">KEGG REACTION (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R00623">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R00623">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R00623">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R00623">Gene (4172)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R00623">KEGG ORTHOLOGY (8)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R00623">KEGG GENES (4164)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R00623">All databases (4190)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R00623">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R00754"></a><font class="title2">REACTION: R00754</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form3">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R00754&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">ethanol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Ethanol + NAD+ &lt;=> Acetaldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00469">C00469</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00084">C00084</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R00754.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R00754.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Comment</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">NADP+ (ec <a href="/dbget-bin/www_bget?ec:1.1.1.71">1.1.1.71</a>, see <a href="/dbget-bin/www_bget?rn:R00746">R00746</a>)<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00238">RP00238</a>&nbsp;&nbsp;</nobr></td><td align="left">C00084_C00469 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/dbget-bin/www_bget?ec:1.1.1.71">1.1.1.71</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00010+R00754">rn00010</a>&nbsp;&nbsp;</nobr></td><td align="left">Glycolysis / Gluconeogenesis</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01100+R00754">rn01100</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolic pathways</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01110+R00754">rn01110</a>&nbsp;&nbsp;</nobr></td><td align="left">Biosynthesis of secondary metabolites</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01120+R00754">rn01120</a>&nbsp;&nbsp;</nobr></td><td align="left">Microbial metabolism in diverse environments</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04022">K04022</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R00754">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R00754">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R00754">Pathway (8)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R00754">KEGG PATHWAY (8)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R00754">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R00754">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R00754">Chemical reaction (9)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R00754">KEGG ENZYME (4)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+reaction+rn:R00754">KEGG REACTION (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R00754">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R00754">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R00754">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R00754">Gene (4265)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R00754">KEGG ORTHOLOGY (9)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R00754">KEGG GENES (4256)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R00754">All databases (4289)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R00754">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R02124"></a><font class="title2">REACTION: R02124</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form4">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R02124&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">retinol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Retinol + NAD+ &lt;=> Retinal + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00473">C00473</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00376">C00376</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R02124.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R02124.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP01983">RP01983</a>&nbsp;&nbsp;</nobr></td><td align="left">C00376_C00473 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/dbget-bin/www_bget?ec:1.1.1.105">1.1.1.105</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00830+R02124">rn00830</a>&nbsp;&nbsp;</nobr></td><td align="left">Retinol metabolism</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01100+R02124">rn01100</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolic pathways</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K11149">K11149</a>&nbsp;&nbsp;</nobr></td><td align="left">dehydrogenase/reductase SDR family member 9 [EC:1.1.-.-]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K11154">K11154</a>&nbsp;&nbsp;</nobr></td><td align="left">retinol dehydrogenase 16 [EC:1.1.1.-]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13369">K13369</a>&nbsp;&nbsp;</nobr></td><td align="left">estradiol 17beta-dehydrogenase / testosterone 17beta-dehydrogenase / retinol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.62">1.1.1.62</a> <a href="/dbget-bin/www_bget?ec:1.1.1.63">1.1.1.63</a> <a href="/dbget-bin/www_bget?ec:1.1.1.105">1.1.1.105</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K15734">K15734</a>&nbsp;&nbsp;</nobr></td><td align="left">all-trans-retinol dehydrogenase (NAD+) [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.105">1.1.1.105</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R02124">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R02124">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R02124">Pathway (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R02124">KEGG PATHWAY (4)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R02124">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R02124">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R02124">Chemical reaction (9)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R02124">KEGG ENZYME (5)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R02124">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R02124">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R02124">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R02124">Gene (3354)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R02124">KEGG ORTHOLOGY (10)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R02124">KEGG GENES (3344)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R02124">All databases (3374)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R02124">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R04805"></a><font class="title2">REACTION: R04805</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form5">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R04805&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">3alpha,7alpha,26-Trihydroxy-5beta-cholestane + NAD+ &lt;=> 3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C05444">C05444</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C05445">C05445</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R04805.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R04805.gif"></a></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP04436">RP04436</a>&nbsp;&nbsp;</nobr></td><td align="left">C05444_C05445 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R04805">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R04805">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R04805">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R04805">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R04805">Chemical reaction (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R04805">KEGG ENZYME (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R04805">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R04805">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R04805">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R04805">Gene (839)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R04805">KEGG ORTHOLOGY (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R04805">KEGG GENES (838)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R04805">All databases (851)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R04805">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R04880"></a><font class="title2">REACTION: R04880</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form6">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R04880&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">3,4-dihydroxyphenylethyleneglycol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">3,4-Dihydroxyphenylethyleneglycol + NAD+ &lt;=> 3,4-Dihydroxymandelaldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C05576">C05576</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C05577">C05577</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R04880.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R04880.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP04492">RP04492</a>&nbsp;&nbsp;</nobr></td><td align="left">C05576_C05577 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00350+R04880">rn00350</a>&nbsp;&nbsp;</nobr></td><td align="left">Tyrosine metabolism</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01100+R04880">rn01100</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolic pathways</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R04880">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R04880">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R04880">Pathway (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R04880">KEGG PATHWAY (4)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R04880">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R04880">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R04880">Chemical reaction (7)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R04880">KEGG ENZYME (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R04880">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R04880">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R04880">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R04880">Gene (4172)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R04880">KEGG ORTHOLOGY (8)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R04880">KEGG GENES (4164)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R04880">All databases (4190)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R04880">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R05233"></a><font class="title2">REACTION: R05233</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form7">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R05233&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">trans-3-Chloro-2-propene-1-ol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">trans-3-Chloro-2-propene-1-ol + NAD+ &lt;=> trans-3-Chloroallyl aldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C06611">C06611</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C06613">C06613</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R05233.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R05233.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP04835">RP04835</a>&nbsp;&nbsp;</nobr></td><td align="left">C06611_C06613 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00625+R05233">rn00625</a>&nbsp;&nbsp;</nobr></td><td align="left">Chloroalkane and chloroalkene degradation</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01100+R05233">rn01100</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolic pathways</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01120+R05233">rn01120</a>&nbsp;&nbsp;</nobr></td><td align="left">Microbial metabolism in diverse environments</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R05233">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R05233">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R05233">Pathway (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R05233">KEGG PATHWAY (6)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R05233">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R05233">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R05233">Chemical reaction (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R05233">KEGG ENZYME (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R05233">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R05233">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R05233">Gene (4104)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R05233">KEGG ORTHOLOGY (5)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R05233">KEGG GENES (4099)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R05233">All databases (4123)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R05233">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R05234"></a><font class="title2">REACTION: R05234</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form8">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R05234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">cis-3-chloro-2-propene-1-ol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">cis-3-Chloro-2-propene-1-ol + NAD+ &lt;=> cis-3-Chloroallyl aldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C06612">C06612</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C16348">C16348</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R05234.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R05234.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP11679">RP11679</a>&nbsp;&nbsp;</nobr></td><td align="left">C06612_C16348 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00625+R05234">rn00625</a>&nbsp;&nbsp;</nobr></td><td align="left">Chloroalkane and chloroalkene degradation</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01100+R05234">rn01100</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolic pathways</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01120+R05234">rn01120</a>&nbsp;&nbsp;</nobr></td><td align="left">Microbial metabolism in diverse environments</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R05234">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R05234">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R05234">Pathway (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R05234">KEGG PATHWAY (6)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R05234">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R05234">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R05234">Chemical reaction (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R05234">KEGG ENZYME (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R05234">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R05234">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R05234">Gene (4104)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R05234">KEGG ORTHOLOGY (5)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R05234">KEGG GENES (4099)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R05234">All databases (4123)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R05234">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R06917"></a><font class="title2">REACTION: R06917</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form9">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R06917&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">1-hydroxymethylnaphthalene:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">1-Hydroxymethylnaphthalene + NAD+ &lt;=> 1-Naphthaldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C14089">C14089</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C14090">C14090</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R06917.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R06917.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP09622">RP09622</a>&nbsp;&nbsp;</nobr></td><td align="left">C14089_C14090 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00626+R06917">rn00626</a>&nbsp;&nbsp;</nobr></td><td align="left">Naphthalene degradation</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01120+R06917">rn01120</a>&nbsp;&nbsp;</nobr></td><td align="left">Microbial metabolism in diverse environments</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R06917">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R06917">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R06917">Pathway (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R06917">KEGG PATHWAY (4)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R06917">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R06917">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R06917">Chemical reaction (7)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R06917">KEGG ENZYME (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R06917">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R06917">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R06917">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R06917">Gene (4104)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R06917">KEGG ORTHOLOGY (5)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R06917">KEGG GENES (4099)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R06917">All databases (4122)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R06917">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R06927"></a><font class="title2">REACTION: R06927</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form10">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R06927&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">(2-naphthyl)methanol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">(2-Naphthyl)methanol + NAD+ &lt;=> 2-Naphthaldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C02909">C02909</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C14099">C14099</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R06927.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R06927.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP09285">RP09285</a>&nbsp;&nbsp;</nobr></td><td align="left">C02909_C14099 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00626+R06927">rn00626</a>&nbsp;&nbsp;</nobr></td><td align="left">Naphthalene degradation</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn01120+R06927">rn01120</a>&nbsp;&nbsp;</nobr></td><td align="left">Microbial metabolism in diverse environments</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K04072">K04072</a>&nbsp;&nbsp;</nobr></td><td align="left">acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.2.1.10">1.2.1.10</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13954">K13954</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R06927">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R06927">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R06927">Pathway (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R06927">KEGG PATHWAY (4)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R06927">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R06927">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R06927">Chemical reaction (7)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R06927">KEGG ENZYME (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R06927">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R06927">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R06927">SABIO-RK (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R06927">Gene (4104)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R06927">KEGG ORTHOLOGY (5)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R06927">KEGG GENES (4099)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R06927">All databases (4122)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R06927">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R08281"></a><font class="title2">REACTION: R08281</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form11">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R08281&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">alcophosphamide:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Aldophosphamide + NADH + H+ &lt;=> Alcophosphamide + NAD+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C07645">C07645</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C16551">C16551</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R08281.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R08281.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP13149">RP13149</a>&nbsp;&nbsp;</nobr></td><td align="left">C07645_C16551 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00982+R08281">rn00982</a>&nbsp;&nbsp;</nobr></td><td align="left">Drug metabolism - cytochrome P450</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R08281">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R08281">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R08281">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R08281">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R08281">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R08281">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R08281">Chemical reaction (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R08281">KEGG ENZYME (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+reaction+rn:R08281">KEGG REACTION (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R08281">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R08281">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R08281">Gene (3214)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R08281">KEGG ORTHOLOGY (6)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R08281">KEGG GENES (3208)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R08281">All databases (3229)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R08281">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R08306"></a><font class="title2">REACTION: R08306</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form12">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R08306&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">2-phenyl-1,3-propanediol monocarbamate:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">2-Phenyl-1,3-propanediol monocarbamate + NAD+ &lt;=> 3-Carbamoyl-2-phenylpropionaldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C16586">C16586</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C16587">C16587</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R08306.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R08306.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP13225">RP13225</a>&nbsp;&nbsp;</nobr></td><td align="left">C16586_C16587 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00982+R08306">rn00982</a>&nbsp;&nbsp;</nobr></td><td align="left">Drug metabolism - cytochrome P450</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R08306">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R08306">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R08306">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R08306">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R08306">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R08306">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R08306">Chemical reaction (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R08306">KEGG ENZYME (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R08306">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R08306">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R08306">Gene (3214)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R08306">KEGG ORTHOLOGY (6)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R08306">KEGG GENES (3208)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R08306">All databases (3228)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R08306">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R08557"></a><font class="title2">REACTION: R08557</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form13">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R08557&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Choline + NAD+ &lt;=> Betaine aldehyde + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00114">C00114</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00576">C00576</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R08557.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R08557.gif"></a></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00236">RP00236</a>&nbsp;&nbsp;</nobr></td><td align="left">C00114_C00576 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00260+R08557">rn00260</a>&nbsp;&nbsp;</nobr></td><td align="left">Glycine, serine and threonine metabolism</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K11440">K11440</a>&nbsp;&nbsp;</nobr></td><td align="left">choline dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R08557">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R08557">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R08557">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R08557">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R08557">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R08557">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R08557">Chemical reaction (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R08557">KEGG ENZYME (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R08557">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R08557">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R08557">Gene (13)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R08557">KEGG ORTHOLOGY (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R08557">KEGG GENES (12)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R08557">All databases (26)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R08557">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R08558"></a><font class="title2">REACTION: R08558</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form14">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R08558&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Choline + NADP+ &lt;=> Betaine aldehyde + NADPH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00114">C00114</a> + <a href="/dbget-bin/www_bget?cpd:C00006">C00006</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C00576">C00576</a> + <a href="/dbget-bin/www_bget?cpd:C00005">C00005</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R08558.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R08558.gif"></a></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00001">RP00001</a>&nbsp;&nbsp;</nobr></td><td align="left">C00005_C00006 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00236">RP00236</a>&nbsp;&nbsp;</nobr></td><td align="left">C00114_C00576 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00260+R08558">rn00260</a>&nbsp;&nbsp;</nobr></td><td align="left">Glycine, serine and threonine metabolism</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K11440">K11440</a>&nbsp;&nbsp;</nobr></td><td align="left">choline dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R08558">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R08558">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R08558">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R08558">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R08558">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R08558">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R08558">Chemical reaction (4)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R08558">KEGG ENZYME (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R08558">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R08558">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R08558">Gene (13)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R08558">KEGG ORTHOLOGY (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R08558">KEGG GENES (12)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R08558">All databases (26)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R08558">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R07327"></a><font class="title2">REACTION: R07327</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form15">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R07327&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">alcohol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Alcohol + NAD+ &lt;=> Ketone + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C00069">C00069</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C01450">C01450</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R07327.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R07327.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R07327">Ontology (1)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R07327">KEGG BRITE (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R07327">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R07327">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R07327">Chemical reaction (3)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R07327">KEGG ENZYME (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R07327">KEGG RPAIR (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R07327">SABIO-RK (1)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R07327">All databases (9)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R07327">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R00624"></a><font class="title2">REACTION: R00624</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form16">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R00624&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Secondary_alcohol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Secondary alcohol + NAD+ &lt;=> Ketone + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C01612">C01612</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C01450">C01450</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R00624.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R00624.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Comment</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">general reaction<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP03172">RP03172</a>&nbsp;&nbsp;</nobr></td><td align="left">C01450_C01612 main</td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R00624">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R00624">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R00624">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R00624">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R00624">Chemical reaction (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R00624">KEGG ENZYME (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R00624">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R00624">KEGG RCLASS (1)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+sabio-rk+rn:R00624">SABIO-RK (1)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R00624">All databases (12)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R00624">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R08310"></a><font class="title2">REACTION: R08310</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form17">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R08310&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">4-hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one + NAD+ &lt;=> 5-Phenyl-1,3-oxazinane-2,4-dione + NADH + H+<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C16595">C16595</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C16596">C16596</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R08310.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R08310.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP13235">RP13235</a>&nbsp;&nbsp;</nobr></td><td align="left">C16595_C16596 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00982+R08310">rn00982</a>&nbsp;&nbsp;</nobr></td><td align="left">Drug metabolism - cytochrome P450</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R08310">Ontology (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R08310">KEGG BRITE (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R08310">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R08310">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R08310">Chemical substance (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R08310">KEGG COMPOUND (5)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R08310">Chemical reaction (5)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R08310">KEGG ENZYME (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R08310">KEGG RPAIR (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R08310">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R08310">Gene (3214)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R08310">KEGG ORTHOLOGY (6)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R08310">KEGG GENES (3208)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R08310">All databases (3228)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R08310">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<table border=0 cellpadding=0 cellspacing=0><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td width="70"><a href="/kegg/kegg2.html"><img align="middle" border="0" src="/Fig/bget/kegg2.gif" alt="KEGG"></a></td><td>&nbsp;&nbsp;&nbsp;</td><td><a name="reaction:R07105"></a><font class="title2">REACTION: R07105</font></td><td align="right" valign="bottom"><a href="javascript:void(window.open('/kegg/document/help_bget_reaction.html','KEGG_Help','toolbar=no,location=no,directories=no,width=720,height=640,resizable=yes,scrollbars=yes'))"><img onmouseup="btn(this,'Hb')" align="middle" onmouseout="btn(this,'Hb')" onmousedown="btn(this,'Hbd')" onmouseover="btn(this,'Hbh')" alt="Help" name="help" border="0" src="/Fig/bget/button_Hb.gif"></a></td></tr></table>
+<form method="post" action="/dbget-bin/www_bget" enctype="application/x-www-form-urlencoded" name="form18">
+<table border=0 cellpadding=1 cellspacing=0>
+<tr>
+<td class="fr2">
+<table border=0 cellpadding=2 cellspacing=0 style="border-bottom:#000 1px solid">
+
+<tr><th class="th20" align="left" valign="middle" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Entry</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left"><code>R07105&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</code></td> <td align="right"><br></td></tr></table></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Name</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">trichloroethanol:NAD+ oxidoreductase<br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Definition</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden">Chloral hydrate + NADH + H+ &lt;=> Trichloroethanol + NAD+ + H2O<br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Equation</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?cpd:C06899">C06899</a> + <a href="/dbget-bin/www_bget?cpd:C00004">C00004</a> + <a href="/dbget-bin/www_bget?cpd:C00080">C00080</a> &lt;=> <a href="/dbget-bin/www_bget?cpd:C07490">C07490</a> + <a href="/dbget-bin/www_bget?cpd:C00003">C00003</a> + <a href="/dbget-bin/www_bget?cpd:C00001">C00001</a><br>
+</div></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr></nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><a href="/Fig/reaction/R07105.gif"><img border=0 name="img0" align="bottom" src="/Fig/reaction_small/R07105.gif"></a></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>RPair</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP00002">RP00002</a>&nbsp;&nbsp;</nobr></td><td align="left">C00003_C00004 cofac</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP10008">RP10008</a>&nbsp;&nbsp;</nobr></td><td align="left">C00001_C06899 leave</td></tr><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/dbget-bin/www_bget?rp:RP10191">RP10191</a>&nbsp;&nbsp;</nobr></td><td align="left">C06899_C07490 main</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Enzyme</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><div style="width:555px;overflow-x:auto;overflow-y:hidden"><a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a><br>
+</div></td></tr>
+
+
+<tr><th class="th21" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Pathway</nobr></th>
+<td class="td21" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:5em"><nobr><a href="/kegg-bin/show_pathway?rn00980+R07105">rn00980</a>&nbsp;&nbsp;</nobr></td><td align="left">Metabolism of xenobiotics by cytochrome P450</td></tr></table></td></tr>
+
+
+<tr><th class="th20" align="left" valign="top" style="border-color:#000; border-width: 1px 0px 0px 1px; border-style: solid"><nobr>Orthology</nobr></th>
+<td class="td20" style="border-color:#000; border-width: 1px 1px 0px 1px; border-style: solid"><table width=555 border=0 cellspacing=0 cellpadding=0><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00001">K00001</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K00121">K00121</a>&nbsp;&nbsp;</nobr></td><td align="left">S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.284">1.1.1.284</a> <a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13951">K13951</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 1/7 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13952">K13952</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 6 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13953">K13953</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase, propanol-preferring [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr><tr><td align="left" valign="top" style="width:4.5em"><nobr><a href="/dbget-bin/www_bget?ko:K13980">K13980</a>&nbsp;&nbsp;</nobr></td><td align="left">alcohol dehydrogenase 4 [EC:<a href="/dbget-bin/www_bget?ec:1.1.1.1">1.1.1.1</a>]</td></tr></table></td></tr>
+
+</table></td></tr></table>
+<br></form></td><td valign="top"><div style="margin-top:46px;margin-left:1em;border:#ddd 1px solid"><div class="th20" style="font-weight:bold;line-height:1.5em">&nbsp;&nbsp;All links&nbsp;&nbsp;</div>
+<pre style="margin-left:1em">
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+1+rn:R07105">Ontology (1)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+brite+rn:R07105">KEGG BRITE (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+2+rn:R07105">Pathway (2)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+pathway+rn:R07105">KEGG PATHWAY (2)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+5+rn:R07105">Chemical substance (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+compound+rn:R07105">KEGG COMPOUND (6)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+6+rn:R07105">Chemical reaction (6)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+enzyme+rn:R07105">KEGG ENZYME (2)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rpair+rn:R07105">KEGG RPAIR (3)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+rclass+rn:R07105">KEGG RCLASS (1)</a>   
+<span style="color:#006"><a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+8+rn:R07105">Gene (3214)</a></span>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+orthology+rn:R07105">KEGG ORTHOLOGY (6)</a>   
+   <a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+genes+rn:R07105">KEGG GENES (3208)</a>   
+<a href="http://www.genome.jp/dbget-bin/get_linkdb?-t+alldb+rn:R07105">All databases (3229)</a>   
+<br><a href="http://www.genome.jp/dbget-bin/get_linkdb?-N+rn:R07105">Download RDF</a>   
+</pre>
+</div>
+</td></tr></table>
+
+
+<a href="/dbget/">DBGET</a> integrated database retrieval system</div>
+
+</body>
+</html>

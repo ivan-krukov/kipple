@@ -16,16 +16,14 @@ __currency_metabolites = set(["C00001",	#water
 							"C00080"])	#H+
 class KReaction:
 
-	def __init__(self,entry_html):
-		self.__html = entry_html
+	def __init__(self,entry_tree):
 		self.pathways = list()
 		self.reaction_pairs = list()
 		self.enzymes = list()
 		self.orthology = list()
 		
 		#parse the page
-		page_tree = BeautifulSoup(self.__html)
-		for cell in page_tree("tr"):
+		for cell in entry_tree("tr"):
 			title = cell.find("nobr")
 			if title:
 				if "Entry" in title.text:
@@ -84,9 +82,4 @@ class KReaction:
 
 def exclude_currency (metabolites):
 	return metabolites.difference(__currency_metabolites)
-
-if __name__=="__main__":
-	r = KReaction(open("example.html").read())
-	print exclude_currency(r.substrates)
-	print exclude_currency(r.products)
 
